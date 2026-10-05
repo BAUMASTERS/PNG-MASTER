@@ -1,17 +1,31 @@
+```html
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
+
   <title>PNG BAU MASTER</title>
+
   <script>
-    const URL = "https://script.google.com/macros/s/AKfycbzWI8UxfXItJEqcVGEea0mnLDLhJ6rSa_SSoHZIXw81jqRHSlkp5YfzHptXodrFiYaS/exec";
+    const BASE_URL =
+      "https://script.google.com/macros/s/AKfycbzWI8UxfXItJEqcVGEea0mnLDLhJ6rSa_SSoHZIXw81jqRHSlkp5YfzHptXodrFiYaS/exec";
+
+    // Tạo version tự động theo thời gian hiện tại
+    const VERSION = Date.now();
+
+    // Thêm ?v=timestamp để tránh cache
+    const URL = `${BASE_URL}?v=${VERSION}`;
+
     location.replace(URL);
   </script>
 </head>
+
 <body>
   <p>Redirecting to place you should go...</p>
 </body>
 </html>
+```
